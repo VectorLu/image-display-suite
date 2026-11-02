@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "license": "MIT",
+  "font": {
+    "copyright": "© 2014-2021 Adobe (http://www.adobe.com/).",
+    "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+    "postscript_name": "NotoSansCJKsc-Regular",
+    "version": "Version 2.004;hotconv 1.0.118;makeotfexe 2.5.65603"
+  },
+  "images": [
+    {
+      "id": 1,
+      "filename": "PT001_reading_1080x24000_9x200.jpg",
+      "width": 1080,
+      "height": 24000,
+      "title": "文字阅读",
+      "group": "长图内容",
+      "purpose": "不同字号文字、分段和底部 END",
+      "ratio": "9x200",
+      "bytes": 4502456,
+      "sha256": "63a950acada44cff8b2de3df95241e4be3a4521f0caa48334ac38960e2fc3adb"
+    },
+    {
+      "id": 2,
+      "filename": "PT002_sharpness_1080x24000_9x200.png",
+      "width": 1080,
+      "height": 24000,
+      "title": "细线网格",
+      "group": "长图内容",
+      "purpose": "无损 1 / 2 / 4 / 8 px 条纹及棋盘格",
+      "ratio": "9x200",
+      "bytes": 1484255,
+      "sha256": "5ee5eba615c44699eda3b89350f29c5391d28310f10ccfca47fbf2fabc550dbd"
+    },
+    {
+      "id": 3,
+      "filename": "PT003_colors_1080x24000_9x200.jpg",
+      "width": 1080,
+      "height": 24000,
+      "title": "色彩定位",
+      "group": "长图内容",
+      "purpose": "色带、灰阶和纵向位置",
+      "ratio": "9x200",
+      "bytes": 2507148,
+      "sha256": "9ebacdcf1a4dd3acacb4952b62ec91b22dd668a4cfd3d30cb3c1e1d02815433b"
+    },
+    {
+      "id": 4,
+      "filename": "PT004_gallery_1080x24000_9x200.jpg",
+      "width": 1080,
+      "height": 24000,
+      "title": "连续画面",
+      "group": "长图内容",
+      "purpose": "30 幅编号合成风景，检查连续浏览",
+      "ratio": "9x200",
+      "bytes": 1819324,
+      "sha256": "7bb402713f40e1c806dda3bc9e173de552ccf93dedfec696fb1ab6c7e6369cf3"
+    },
+    {
+      "id": 5,
+      "filename": "PT005_square_1080x1080_1x1.png",
+      "width": 1080,
+      "height": 1080,
+      "title": "正方形基准",
+      "group": "日常基准",
+      "purpose": "检查完整显示与铺满裁切的基准",
+      "ratio": "1x1",
+      "bytes": 80098,
+      "sha256": "862a98ee15ba75c18ce95a23670c16f779a250715584f9c4e6d14c514862ce97"
+    },
+    {
+      "id": 6,
+      "filename": "PT006_landscape_4032x3024_4x3.jpg",
+      "width": 4032,
+      "height": 3024,
+      "title": "横向照片",
+      "group": "日常基准",
+      "purpose": "常见 4:3 横图，约 1220 万像素",
+      "ratio": "4x3",
+      "bytes": 1099417,
+      "sha256": "702cfdb5f4e47fc55809cb4b124a43e7ae21301c77dc6b7fad31ca4cd0b30013"
+    },
+    {
+      "id": 7,
+      "filename": "PT007_portrait_3024x4032_3x4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "title": "竖向照片",
+      "group": "日常基准",
+      "purpose": "与横图对应的 3:4 竖图",
+      "ratio": "3x4",
+      "bytes": 1074078,
+      "sha256": "b675a93611c53f9b8c9bb3f681400dd4ccdb15a8b12b491b00a764e99356299d"
+    },
+    {
+      "id": 8,
+      "filename": "PT008_widescreen_3840x2160_16x9.jpg",
+      "width": 3840,
+      "height": 2160,
+      "title": "宽屏画面",
+      "group": "日常基准",
+      "purpose": "16:9 横图，约 829 万像素",
+      "ratio": "16x9",
+      "bytes": 735677,
+      "sha256": "b209da074f620fa63d6066d4de68770ea1b57100a3fe8f20cc86ad3c56b7935d"
+    },
+    {
+      "id": 9,
+      "filename": "PT009_phone_1080x2400_9x20.jpg",
+      "width": 1080,
+      "height": 2400,
+      "title": "单屏竖图",
+      "group": "日常基准",
+      "purpose": "9:20 手机屏幕基准，与 10 屏长图对照",
+      "ratio": "9x20",
+      "bytes": 330335,
+      "sha256": "93ba62d948637f2c4400376aebf392857911b044a6e4f38f551fc2cf7b75f889"
+    },
+    {
+      "id": 10,
+      "filename": "PT010_long_1080x6000_9x50.jpg",
+      "width": 1080,
+      "height": 6000,
+      "title": "中等长图",
+      "group": "长宽比例",
+      "purpose": "中等长度，检查缩放与到达底部",
+      "ratio": "9x50",
+      "bytes": 934490,
+      "sha256": "b4f83044202106e8ddc8cfa999f4e7034f5531c5390aa82a044b0ce364921685"
+    },
+    {
+      "id": 11,
+      "filename": "PT011_panorama_12000x1080_100x9.jpg",
+      "width": 12000,
+      "height": 1080,
+      "title": "横向全景",
+      "group": "长宽比例",
+      "purpose": "向左向右的分段、首尾显示",
+      "ratio": "100x9",
+      "bytes": 1936346,
+      "sha256": "02cd78f9a6d56dcc6565de3e5332606342a1ff87ee82d7e2a0be264cb699f003"
+    },
+    {
+      "id": 12,
+      "filename": "PT012_panorama_24000x1080_200x9.jpg",
+      "width": 24000,
+      "height": 1080,
+      "title": "超宽全景",
+      "group": "长宽比例",
+      "purpose": "与 1080x24000 长图互换宽高，比较方向差异",
+      "ratio": "200x9",
+      "bytes": 3891536,
+      "sha256": "f43e62fc723c79b6157c2b6d05913b8428621d625c57e5f95e0f13ea88a28ca1"
+    },
+    {
+      "id": 13,
+      "filename": "PT013_lowres_360x8000_9x200.jpg",
+      "width": 360,
+      "height": 8000,
+      "title": "低分辨率长图",
+      "group": "分辨率对照",
+      "purpose": "同 9:200 比例，识别源图分辨率不足的正常模糊",
+      "ratio": "9x200",
+      "bytes": 873112,
+      "sha256": "844a160a21710cd9b0a295c09ccc00a6103ad00d9b291707167e567647a7f2ec"
+    },
+    {
+      "id": 14,
+      "filename": "PT014_highres_2160x48000_9x200.jpg",
+      "width": 2160,
+      "height": 48000,
+      "title": "高分辨率长图",
+      "group": "压力测试",
+      "purpose": "同 9:200 比例，约 1.04 亿像素；单张压力测试",
+      "ratio": "9x200",
+      "bytes": 7178263,
+      "sha256": "8b19aebe02cee14e4aff1c767a31596becb722d579947fe28f0e44508405a219"
+    },
+    {
+      "id": 15,
+      "filename": "PT015_odd_1001x22223_1001x22223.png",
+      "width": 1001,
+      "height": 22223,
+      "title": "奇数尺寸长图",
+      "group": "边界测试",
+      "purpose": "检查取整、边缘少一列及缩放偏移",
+      "ratio": "1001x22223",
+      "bytes": 1032140,
+      "sha256": "9965a74c318d2ddcaa80bd12830dd46743e8d99e3a0fbff39f79f9931c1a828b"
+    },
+    {
+      "id": 16,
+      "filename": "PT016_edge_512x8191_512x8191.png",
+      "width": 512,
+      "height": 8191,
+      "title": "8191 边界",
+      "group": "边界测试",
+      "purpose": "最长边比 8192 少 1 像素，总像素低于 800 万",
+      "ratio": "512x8191",
+      "bytes": 295135,
+      "sha256": "1708392c59b210dbd75de896f270edb1bdfe668bcc6a73b5f00c13557579a5a3"
+    },
+    {
+      "id": 17,
+      "filename": "PT017_edge_512x8192_1x16.png",
+      "width": 512,
+      "height": 8192,
+      "title": "8192 边界",
+      "group": "边界测试",
+      "purpose": "最长边恰好 8192 像素，总像素低于 800 万",
+      "ratio": "1x16",
+      "bytes": 295153,
+      "sha256": "9c0092c809c6adf246bd45f00347f795eaeba6bfd46162a7fede182ac43c50d1"
+    },
+    {
+      "id": 18,
+      "filename": "PT018_edge_512x8193_512x8193.png",
+      "width": 512,
+      "height": 8193,
+      "title": "8193 边界",
+      "group": "边界测试",
+      "purpose": "最长边比 8192 多 1 像素，总像素低于 800 万",
+      "ratio": "512x8193",
+      "bytes": 297091,
+      "sha256": "69c1ded6df5ab9e60fd860df6be54c90124d24806d5b21ccfe3319883b5e8e3c"
+    },
+    {
+      "id": 19,
+      "filename": "PT019_alpha_1080x6000_9x50.png",
+      "width": 1080,
+      "height": 6000,
+      "title": "透明长图",
+      "group": "格式对照",
+      "purpose": "真实透明 / 半透明 / 不透明区域，检查底色与黑边",
+      "ratio": "9x50",
+      "bytes": 260109,
+      "sha256": "d023cbe6e950c8c9a693473b751a30d2e6de1adb9a78e73478335cb2df8f52b9"
+    },
+    {
+      "id": 20,
+      "filename": "PT020_format_1080x6000_9x50.jpg",
+      "width": 1080,
+      "height": 6000,
+      "title": "JPEG 格式对照",
+      "group": "格式对照",
+      "purpose": "与 PT021 同一绘制内容，检查有损压缩差异",
+      "ratio": "9x50",
+      "bytes": 949055,
+      "sha256": "a785958d2c84333524155b61f719ba5d969a29440f8007f6b24ceff50bbf6468"
+    },
+    {
+      "id": 21,
+      "filename": "PT021_format_1080x6000_9x50.png",
+      "width": 1080,
+      "height": 6000,
+      "title": "PNG 格式对照",
+      "group": "格式对照",
+      "purpose": "与 PT020 同一绘制内容，无损输出",
+      "ratio": "9x50",
+      "bytes": 317950,
+      "sha256": "91ae2a5b6c6bb54a19a00c3f84ff0258f9765bd3a13ab28d178ea36600e10c42"
+    },
+    {
+      "id": 22,
+      "filename": "PT022_pixels_2000x3999_2000x3999.png",
+      "width": 2000,
+      "height": 3999,
+      "title": "略低于 800 万像素",
+      "group": "边界测试",
+      "purpose": "799.8 万像素，最长边低于 8192",
+      "ratio": "2000x3999",
+      "bytes": 270576,
+      "sha256": "adfc4b913c8604e715ef095d2a2e0a1b26ee47f929726d58e584c072aa3eae98"
+    },
+    {
+      "id": 23,
+      "filename": "PT023_pixels_2000x4000_1x2.png",
+      "width": 2000,
+      "height": 4000,
+      "title": "恰好 800 万像素",
+      "group": "边界测试",
+      "purpose": "恰好 800 万像素，最长边低于 8192",
+      "ratio": "1x2",
+      "bytes": 268852,
+      "sha256": "d6074b41910e3291cc633d1c7f0f8336c7eefb2fed3c1f3b80709e44294399cd"
+    },
+    {
+      "id": 24,
+      "filename": "PT024_pixels_2000x4001_2000x4001.png",
+      "width": 2000,
+      "height": 4001,
+      "title": "略高于 800 万像素",
+      "group": "边界测试",
+      "purpose": "800.2 万像素，最长边低于 8192",
+      "ratio": "2000x4001",
+      "bytes": 266715,
+      "sha256": "1b2495751f954c366eebbec5448ca21bbda7d06aaad88b230912cc53f4708122"
+    }
+  ],
+  "verification": {
+    "format_pair": {
+      "ids": [
+        20,
+        21
+      ],
+      "source_sha256": {
+        "20": "6b7342bc86a60b501d39f520755b7f16539c314090494cc02b1849afd51a4772",
+        "21": "6b7342bc86a60b501d39f520755b7f16539c314090494cc02b1849afd51a4772"
+      }
+    }
+  }
+}

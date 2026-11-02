@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.swift text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.jpg binary
+*.png binary
+*.otf binary
+# Preserve the exact upstream license and copyright bytes on every platform.
+fonts/OFL-1.1.txt -text
+fonts/COPYRIGHT.txt -text

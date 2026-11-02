@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "filename": "PT001_reading_1080x24000_9x200.jpg",
+    "width": 1080,
+    "height": 24000,
+    "title": "文字阅读",
+    "group": "长图内容",
+    "purpose": "不同字号文字、分段和底部 END",
+    "ratio": "9x200"
+  },
+  {
+    "id": 2,
+    "filename": "PT002_sharpness_1080x24000_9x200.png",
+    "width": 1080,
+    "height": 24000,
+    "title": "细线网格",
+    "group": "长图内容",
+    "purpose": "无损 1 / 2 / 4 / 8 px 条纹及棋盘格",
+    "ratio": "9x200"
+  },
+  {
+    "id": 3,
+    "filename": "PT003_colors_1080x24000_9x200.jpg",
+    "width": 1080,
+    "height": 24000,
+    "title": "色彩定位",
+    "group": "长图内容",
+    "purpose": "色带、灰阶和纵向位置",
+    "ratio": "9x200"
+  },
+  {
+    "id": 4,
+    "filename": "PT004_gallery_1080x24000_9x200.jpg",
+    "width": 1080,
+    "height": 24000,
+    "title": "连续画面",
+    "group": "长图内容",
+    "purpose": "30 幅编号合成风景，检查连续浏览",
+    "ratio": "9x200"
+  },
+  {
+    "id": 5,
+    "filename": "PT005_square_1080x1080_1x1.png",
+    "width": 1080,
+    "height": 1080,
+    "title": "正方形基准",
+    "group": "日常基准",
+    "purpose": "检查完整显示与铺满裁切的基准",
+    "ratio": "1x1"
+  },
+  {
+    "id": 6,
+    "filename": "PT006_landscape_4032x3024_4x3.jpg",
+    "width": 4032,
+    "height": 3024,
+    "title": "横向照片",
+    "group": "日常基准",
+    "purpose": "常见 4:3 横图，约 1220 万像素",
+    "ratio": "4x3"
+  },
+  {
+    "id": 7,
+    "filename": "PT007_portrait_3024x4032_3x4.jpg",
+    "width": 3024,
+    "height": 4032,
+    "title": "竖向照片",
+    "group": "日常基准",
+    "purpose": "与横图对应的 3:4 竖图",
+    "ratio": "3x4"
+  },
+  {
+    "id": 8,
+    "filename": "PT008_widescreen_3840x2160_16x9.jpg",
+    "width": 3840,
+    "height": 2160,
+    "title": "宽屏画面",
+    "group": "日常基准",
+    "purpose": "16:9 横图，约 829 万像素",
+    "ratio": "16x9"
+  },
+  {
+    "id": 9,
+    "filename": "PT009_phone_1080x2400_9x20.jpg",
+    "width": 1080,
+    "height": 2400,
+    "title": "单屏竖图",
+    "group": "日常基准",
+    "purpose": "9:20 手机屏幕基准，与 10 屏长图对照",
+    "ratio": "9x20"
+  },
+  {
+    "id": 10,
+    "filename": "PT010_long_1080x6000_9x50.jpg",
+    "width": 1080,
+    "height": 6000,
+    "title": "中等长图",
+    "group": "长宽比例",
+    "purpose": "中等长度，检查缩放与到达底部",
+    "ratio": "9x50"
+  },
+  {
+    "id": 11,
+    "filename": "PT011_panorama_12000x1080_100x9.jpg",
+    "width": 12000,
+    "height": 1080,
+    "title": "横向全景",
+    "group": "长宽比例",
+    "purpose": "向左向右的分段、首尾显示",
+    "ratio": "100x9"
+  },
+  {
+    "id": 12,
+    "filename": "PT012_panorama_24000x1080_200x9.jpg",
+    "width": 24000,
+    "height": 1080,
+    "title": "超宽全景",
+    "group": "长宽比例",
+    "purpose": "与 1080x24000 长图互换宽高，比较方向差异",
+    "ratio": "200x9"
+  },
+  {
+    "id": 13,
+    "filename": "PT013_lowres_360x8000_9x200.jpg",
+    "width": 360,
+    "height": 8000,
+    "title": "低分辨率长图",
+    "group": "分辨率对照",
+    "purpose": "同 9:200 比例，识别源图分辨率不足的正常模糊",
+    "ratio": "9x200"
+  },
+  {
+    "id": 14,
+    "filename": "PT014_highres_2160x48000_9x200.jpg",
+    "width": 2160,
+    "height": 48000,
+    "title": "高分辨率长图",
+    "group": "压力测试",
+    "purpose": "同 9:200 比例，约 1.04 亿像素；单张压力测试",
+    "ratio": "9x200"
+  },
+  {
+    "id": 15,
+    "filename": "PT015_odd_1001x22223_1001x22223.png",
+    "width": 1001,
+    "height": 22223,
+    "title": "奇数尺寸长图",
+    "group": "边界测试",
+    "purpose": "检查取整、边缘少一列及缩放偏移",
+    "ratio": "1001x22223"
+  },
+  {
+    "id": 16,
+    "filename": "PT016_edge_512x8191_512x8191.png",
+    "width": 512,
+    "height": 8191,
+    "title": "8191 边界",
+    "group": "边界测试",
+    "purpose": "最长边比 8192 少 1 像素，总像素低于 800 万",
+    "ratio": "512x8191"
+  },
+  {
+    "id": 17,
+    "filename": "PT017_edge_512x8192_1x16.png",
+    "width": 512,
+    "height": 8192,
+    "title": "8192 边界",
+    "group": "边界测试",
+    "purpose": "最长边恰好 8192 像素，总像素低于 800 万",
+    "ratio": "1x16"
+  },
+  {
+    "id": 18,
+    "filename": "PT018_edge_512x8193_512x8193.png",
+    "width": 512,
+    "height": 8193,
+    "title": "8193 边界",
+    "group": "边界测试",
+    "purpose": "最长边比 8192 多 1 像素，总像素低于 800 万",
+    "ratio": "512x8193"
+  },
+  {
+    "id": 19,
+    "filename": "PT019_alpha_1080x6000_9x50.png",
+    "width": 1080,
+    "height": 6000,
+    "title": "透明长图",
+    "group": "格式对照",
+    "purpose": "真实透明 / 半透明 / 不透明区域，检查底色与黑边",
+    "ratio": "9x50"
+  },
+  {
+    "id": 20,
+    "filename": "PT020_format_1080x6000_9x50.jpg",
+    "width": 1080,
+    "height": 6000,
+    "title": "JPEG 格式对照",
+    "group": "格式对照",
+    "purpose": "与 PT021 同一绘制内容，检查有损压缩差异",
+    "ratio": "9x50"
+  },
+  {
+    "id": 21,
+    "filename": "PT021_format_1080x6000_9x50.png",
+    "width": 1080,
+    "height": 6000,
+    "title": "PNG 格式对照",
+    "group": "格式对照",
+    "purpose": "与 PT020 同一绘制内容，无损输出",
+    "ratio": "9x50"
+  },
+  {
+    "id": 22,
+    "filename": "PT022_pixels_2000x3999_2000x3999.png",
+    "width": 2000,
+    "height": 3999,
+    "title": "略低于 800 万像素",
+    "group": "边界测试",
+    "purpose": "799.8 万像素，最长边低于 8192",
+    "ratio": "2000x3999"
+  },
+  {
+    "id": 23,
+    "filename": "PT023_pixels_2000x4000_1x2.png",
+    "width": 2000,
+    "height": 4000,
+    "title": "恰好 800 万像素",
+    "group": "边界测试",
+    "purpose": "恰好 800 万像素，最长边低于 8192",
+    "ratio": "1x2"
+  },
+  {
+    "id": 24,
+    "filename": "PT024_pixels_2000x4001_2000x4001.png",
+    "width": 2000,
+    "height": 4001,
+    "title": "略高于 800 万像素",
+    "group": "边界测试",
+    "purpose": "800.2 万像素，最长边低于 8192",
+    "ratio": "2000x4001"
+  }
+]
