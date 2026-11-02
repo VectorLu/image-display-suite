@@ -49,11 +49,11 @@ python3 scripts/verify.py
 # Regenerate fixtures. Requires macOS, Python 3.9+, and Swift command-line tools.
 python3 scripts/build.py
 
-# Verify and package existing files. Does not require Swift.
+# Verify and package existing test images. Does not require Swift.
 python3 scripts/build.py --package-only
 ```
 
-The package is written to `dist/image-display-suite.zip`. Use `--package` to regenerate and package in one command.
+The package is written to `dist/image-display-suite.zip`. It contains only the test images listed in `cases.json`, placed at the ZIP root for easy import. Source code, fonts, documents, previews, and header artwork remain in the repository. The MIT license notice is preserved in the ZIP comment without adding a non-image file. Use `--package` to regenerate and package in one command.
 
 Verification and packaging use only Python and can run on macOS, Linux, and Windows. Verification checks filenames, dimensions, ratios, encodings, sizes, SHA-256 hashes, PNG CRCs, the alpha control, the format-pair record, and the pinned font/license files. It does not replace visual testing or fully decode every image.
 

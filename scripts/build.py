@@ -64,34 +64,34 @@ def regenerate():
 
 def package():
     validate()
-    # An allowlist keeps caches, device logs, archives and unrelated local files out.
-    names = ["README.md", "README.zh-CN.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md",
-             ".gitignore", ".gitattributes", "cases.json", "manifest.json"]
-    names += ["images/" + s["filename"] for s in read_json(ROOT / "cases.json")]
-    names += ["docs/CATALOG.md", "docs/TESTING.md", "docs/preview.jpg", "docs/hero.png", "docs/hero-generation.md",
-              "fonts/NotoSansCJKsc-Regular.otf", "fonts/OFL-1.1.txt", "fonts/COPYRIGHT.txt", "fonts/SOURCES.json",
-              "scripts/build.py", "scripts/verify.py", "scripts/generate-long.swift", "scripts/generate-patterns.swift",
-              ".github/workflows/verify.yml"]
+    # Only fixture images are archive members. Keep the MIT notice in the ZIP comment.
+    names = [s["filename"] for s in read_json(ROOT / "cases.json")]
     destination = ROOT / "dist/image-display-suite.zip"
     destination.parent.mkdir(exist_ok=True)
     # Stable ordering and timestamps avoid irrelevant archive differences on one set of inputs.
     with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
+        archive.comment = (ROOT / "LICENSE").read_bytes()
         for name in sorted(names):
-            path = ROOT / name
+            path = ROOT / "images" / name
             if path.is_symlink():
                 raise RuntimeError(f"Refusing to package symlink: {name}")
-            entry = zipfile.ZipInfo("image-display-suite/" + name, date_time=(2026, 1, 1, 0, 0, 0))
+            entry = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
             entry.compress_type = zipfile.ZIP_DEFLATED
             entry.external_attr = 0o644 << 16
             archive.writestr(entry, path.read_bytes())
-    print(f"Packaged: {destination}")
+    with zipfile.ZipFile(destination) as archive:
+        if sorted(archive.namelist()) != sorted(names) or archive.testzip() is not None:
+            raise RuntimeError("Image-only archive content or integrity check failed")
+        if archive.comment != (ROOT / "LICENSE").read_bytes():
+            raise RuntimeError("Archive MIT notice is missing")
+    print(f"Packaged {len(names)} test images: {destination}")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     choice = parser.add_mutually_exclusive_group()
-    choice.add_argument("--package", action="store_true", help="regenerate, verify, and create a release archive")
-    choice.add_argument("--package-only", action="store_true", help="verify and package current files without rendering")
+    choice.add_argument("--package", action="store_true", help="regenerate, verify, and create an image-only archive")
+    choice.add_argument("--package-only", action="store_true", help="verify and package test images without rendering")
     args = parser.parse_args()
     if not args.package_only:
         regenerate()

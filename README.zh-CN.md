@@ -31,11 +31,11 @@ python3 scripts/verify.py
 # 重新生成：需要 macOS、Python 3.9+ 和 Swift 命令行工具。
 python3 scripts/build.py
 
-# 验证并打包现有素材，无需 Swift。
+# 验证并打包现有测试图片，无需 Swift。
 python3 scripts/build.py --package-only
 ```
 
-压缩包输出为 `dist/image-display-suite.zip`。`--package` 可在重新生成后直接打包。
+压缩包输出为 `dist/image-display-suite.zip`，只包含 `cases.json` 中列出的测试图片，直接放在 ZIP 根目录，方便解压后导入。源码、字体、文档、预览和介绍图保留在仓库。MIT 许可文本保存在 ZIP 注释中，不额外增加非图片文件。`--package` 可在重新生成后直接打包。
 
 生成过程离线读取随包字体，不依赖相邻目录，也不会安装系统字体。实测生成环境：macOS 26.5.2、Swift 6.3.3、Python 3.9.6。图像编码和字体栅格化可能随 macOS / SDK 变化；`manifest.json` 的哈希用于核验随附文件，不承诺跨平台或跨系统版本逐字节重现。
 
