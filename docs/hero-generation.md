@@ -1,0 +1,23 @@
+# README artwork
+
+- Asset: [`hero.png`](hero.png)
+- Purpose: an introductory illustration for the repository, not a pixel-measurement fixture.
+- Created: 2026-11-02.
+- Tool: built-in `image_gen` image-generation tool, generation mode; no CLI fallback.
+- Inputs: text prompt only; no reference images or third-party photos were supplied.
+- Typography: no lettering or font files are used in this illustration.
+- The asset is included under the project's MIT license. It is separate from the script-rendered fixtures and their OFL font dependency.
+- `scripts/build.py` packages this asset but does not regenerate it. Image-model generation is stochastic, so reusing the prompt does not imply identical output.
+
+## Final prompt
+
+```text
+Use case: infographic-diagram.
+Asset type: wide GitHub README hero illustration for an open-source image rendering test suite.
+Primary request: create an elegant, informative illustration showing a versatile collection of image test fixtures and the idea of testing images of many shapes and sizes across applications.
+Subject: a carefully arranged family of square, portrait, landscape, extremely tall scrolling-image strips and a very wide panoramic strip; their contents mix geometric landscape scenes, color gradients, fine resolution line patterns, checkerboard detail and a partially transparent overlapping frame. A small alignment cross and clean border guides suggest measuring rendering quality. Show a broad range of proportions without implying a fixed number of fixtures.
+Style/medium: polished editorial technical illustration, crisp vector-like geometry rendered as a bitmap, subtle layered paper depth, restrained blue/teal and warm coral accents on an airy off-white background, precise and contemporary open-source developer aesthetic.
+Composition/framing: wide approximately 16:9 composition, generous margins, a clear visual hierarchy and balanced negative space; the different aspect ratios should be immediately understandable even as a small README banner.
+Constraints: purely visual explanation. Absolutely no words, letters, numbers, typography, logos, brands, labels, badges, fake interface controls, signatures or watermarks. No third-party photographic content. The image is introductory artwork, not an exact pixel measurement chart.
+```
+

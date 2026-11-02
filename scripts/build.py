@@ -65,10 +65,10 @@ def regenerate():
 def package():
     validate()
     # An allowlist keeps caches, device logs, archives and unrelated local files out.
-    names = ["README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md",
+    names = ["README.md", "README.zh-CN.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md",
              ".gitignore", ".gitattributes", "cases.json", "manifest.json"]
     names += ["images/" + s["filename"] for s in read_json(ROOT / "cases.json")]
-    names += ["docs/CATALOG.md", "docs/TESTING.md", "docs/preview.jpg",
+    names += ["docs/CATALOG.md", "docs/TESTING.md", "docs/preview.jpg", "docs/hero.png", "docs/hero-generation.md",
               "fonts/NotoSansCJKsc-Regular.otf", "fonts/OFL-1.1.txt", "fonts/COPYRIGHT.txt", "fonts/SOURCES.json",
               "scripts/build.py", "scripts/verify.py", "scripts/generate-long.swift", "scripts/generate-patterns.swift",
               ".github/workflows/verify.yml"]
